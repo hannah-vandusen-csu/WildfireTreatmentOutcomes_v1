@@ -29,6 +29,9 @@ Select fires, compile treatment histories, map predictor variables, and extract 
 | `07_previous_fire_severity_expand.R` | Expand previous fire severity rasters to analysis extent |
 | `08_create_treatment_and_fire_masks.R` | Build treatment presence/absence and previous-fire masks |
 | `09_create_initial_severity_points.R` | Generate candidate sample-point grid from burn severity layer |
+| `10_get_fire_severity.ipynb` | Extract dNBR / RdNBR burn-severity values from GEE for each sample point |
+| `11_GEE_data_extraction.ipynb` | Extract fire weather, topography, climate, and spatial predictor variables from GEE |
+| `12_R_data_extraction.R` | Supplement GEE extraction with R-based predictor layers |
 
 ---
 
@@ -38,9 +41,7 @@ Determine the dominant response drivers within each individual fire, then match 
 
 | Script | Description |
 |--------|-------------|
-| `10_get_fire_severity.ipynb` | Extract dNBR / RdNBR burn-severity values from GEE for each sample point |
-| `11_GEE_data_extraction.ipynb` | Extract fire weather, topography, climate, and spatial predictor variables from GEE |
-| `12_R_data_extraction.R` | Supplement GEE extraction with R-based predictor layers |
+
 | `13_fire_clustering.R` | Cluster fires by climate similarity to ensure adequate post-matching sample sizes |
 | `14_cluster_level_models.R` | Fit fire-level random forest models; rank and weight predictor variables by importance |
 | `15_paired_matching.R` | Match treated to untreated points by minimizing weighted multivariate Euclidean distance |
@@ -55,7 +56,7 @@ Pool matched pairs across fires, reduce correlated predictors, and fit multi-fir
 |--------|-------------|
 | `16_landscape_df_manipulation.R` | Assemble landscape-level dataframes from matched fire pairs |
 | `17_landscape_variable_reduction.R` | Remove multicollinear predictors; apply recursive feature elimination; balance binary response variable |
-| `17_final_landscape_level_models.R` | Fit landscape-level random forest classification models; evaluate treatment effects through model-based inference across treatment age and biophysical gradients |
+| `18_final_landscape_level_models.R` | Fit landscape-level random forest classification models; evaluate treatment effects through model-based inference across treatment age and biophysical gradients |
 
 ---
 
@@ -87,27 +88,7 @@ function_scripts/
 
 ## Required Data (Box)
 
-Scripts expect the following structure under `global_data_pub/` on Box:
-
-```
-global_data_pub/
-├── fire_perimeters/
-│   ├── mtbs/                        # MTBS perimeters through 2021
-│   ├── nifc/                        # NIFC perimeters 2017–present
-│   └── usgs_small_fires/            # USGS interagency perimeter history
-├── treatments/
-│   ├── facts/
-│   │   ├── Actv_CommonAttribute_PL_Region05.gdb
-│   │   └── Actv_CommonAttribute_PL_Region06.gdb
-│   ├── nfpors/fuelperims/
-│   └── treatment_categories/
-│       ├── facts.classes.csv
-│       ├── nfpors.classes.csv
-│       └── class_synthesis_tcremoval.csv
-├── Strategy_Landscapes/
-│   └── AllPriorityLandscapes.gdb    # Wildfire Crisis Strategy Landscapes
-└── Geopolitical_Units/
-    └── S_USA.ALPGeopoliticalUnit.gdb
+All data is publically available. Data specifically used for this project is located in the data a data responsitory. 
 ```
 
 ---
