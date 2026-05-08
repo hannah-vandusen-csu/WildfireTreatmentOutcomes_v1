@@ -1,0 +1,5 @@
+parameter,burn_severity,containment,infrastructure
+perim_buffer,-30,75,2500
+min_treatment_size ,50000,0,0
+min_treatment_age,2,0,0
+max_treatment_age,20,20,20

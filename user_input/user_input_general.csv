@@ -1,0 +1,12 @@
+﻿name,value,treat_as_R_expression,description
+script_directory,/Users/hannahvandusen/Desktop/WildfireTreatmentOutcomes/scripts/klamath/,FALSE,pathfile for the parent directory of the scripts
+global_data_directory,/Users/hannahvandusen/Library/CloudStorage/Box-Box/External Wildfire Treatment Outcomes/klamath/data/global_data_pub,FALSE,pathfile for the parent directory of the input data
+processed_data_directory,/Users/hannahvandusen/Library/CloudStorage/Box-Box/External Wildfire Treatment Outcomes/klamath/data/klamath,FALSE,pathfile for the parent directory of the processed data
+CRS,EPSG:26910,FALSE,coordinate reference system of the landscapes
+start_day_DOY,152,FALSE,"for burn severity, the start day of the year for the fire season"
+end_day_DOY,273,FALSE,"for burn severity, the end day of the year for the fire season"
+burn_severity_metric,RDNBR,FALSE,the burn severity metric to use in the analysis
+basal_area_high_severity_percent_threshold,90,FALSE,the basal area loss threshold for high severity
+wto_outcome,burn_severity,FALSE,"selected outcome, ie burn severity, containment, infrastructure"
+strategy_landscapes_of_interest,"c(""Klamath River Basin"",""Trinity Forest Health and Fire-Resilient Rural Communities"")",TRUE,specific strategy landscapes being analyzed
+response_type,binary,FALSE,reponse variable type (binary or coninuous)
