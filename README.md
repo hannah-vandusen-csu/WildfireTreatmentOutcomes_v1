@@ -22,7 +22,7 @@ Select fires, compile treatment histories, map predictor variables, and extract 
 |--------|-------------|
 | `01_clean_treatments.R` | Download and clean FACTS/NFPORS treatment data; clip to fire perimeters; assign treatment categories |
 | `02_climateNA.R` | Extract 30-year climate normals using ClimateNA |
-| `03_dob_parks.R` | Compute degree-of-burning (DOB) surface using Parks method *(do not redistribute — contact Sean Parks for latest version)* |
+| `03_dob_parks.R` | Compute degree-of-burning (DOB) surface using Parks et al. (2013) method *(we cannot redistribute this script -- Please, contact Sean Parks for latest version)* |
 | `04_upload_dob_gee_assets.ipynb` | Upload DOB raster assets to Google Earth Engine |
 | `05_rasterize_geoprocess.R` | Rasterize treatment polygons; geoprocess upwind predictor layers |
 | `06_get_previous_fire_severity.ipynb` | Retrieve pre-fire burn severity from GEE |
