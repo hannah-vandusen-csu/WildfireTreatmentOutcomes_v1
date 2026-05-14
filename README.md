@@ -1,6 +1,6 @@
 # Klamath–Trinity Analysis Scripts
 
-Scripts for the Klamath–Trinity case study of the Wildfire Treatment Outcomes (WTO) project. This workflow evaluates whether fuel treatments (mechanical removal, prescribed fire, and rearrangement) altered wildfire outcomes—burn severity, fire containment, and infrastructure damage—across fires in the Klamath River Basin and Trinity landscapes.
+Scripts for the Klamath–Trinity case study of the Wildfire Treatment Outcomes (WTO) project. This workflow evaluates whether fuel treatments altered wildfire outcomes—burn severity, fire containment, and infrastructure damage—across fires in the Klamath River Basin and Trinity landscapes.
 
 > **Note:** Scripts reference data stored in Box (`External Wildfire Treatment Outcomes/klamath/`). Raw and processed data are **not** tracked in this repository.
 
