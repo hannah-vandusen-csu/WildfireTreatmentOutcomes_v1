@@ -41,7 +41,6 @@ Determine the dominant response drivers within each individual fire, then match 
 
 | Script | Description |
 |--------|-------------|
-
 | `13_fire_clustering.R` | Cluster fires by climate similarity to ensure adequate post-matching sample sizes |
 | `14_cluster_level_models.R` | Fit fire-level random forest models; rank and weight predictor variables by importance |
 | `15_paired_matching.R` | Match treated to untreated points by minimizing weighted multivariate Euclidean distance |
