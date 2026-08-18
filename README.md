@@ -1,4 +1,4 @@
-# Klamath–Trinity Analysis Scripts
+# Automated Workflow for Wildfire-Treatment Outcomes: Version 1
 
 This repository introduces a standardized, scalable workflow to quantify wildfire-treatment outcomes across diverse landscapes. This workflow supports the study "Automated workflow demonstrates mixed treatment impacts on burn severity across ecoregion scales" (Van Dusen et al. 2026). These scripts evaluate federal fuel treatments across 50 wildfires in southern Oregon and Northern California (2012–2021). Specifically, the workflow aims to predict the probability of high severity fire in treated and untreated areas across two distinct landscapes and environmental conditions: the productive, western Klamath mountains (west) and the more arid southeastern Cascades (east). More detailed information and methodology from the study can be found at Van Dusen et al. 2024 (doi: ). 
 
