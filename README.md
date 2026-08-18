@@ -1,6 +1,9 @@
 # Klamath–Trinity Analysis Scripts
 
-Scripts for the Klamath–Trinity case study of the Wildfire Treatment Outcomes (WTO) project. This workflow evaluates whether fuel treatments altered wildfire outcomes—burn severity, fire containment, and infrastructure damage—across fires in the Klamath River Basin and Trinity landscapes.
+This repository introduces a standardized, scalable workflow to quantify wildfire-treatment outcomes across diverse landscapes. This workflow supports the study "Automated workflow demonstrates mixed treatment impacts on burn severity across ecoregion scales" (Van Dusen et al. 2026). These scripts evaluate federal fuel treatments across 50 wildfires in southern Oregon and Northern California (2012–2021). Specifically analyzed outcomes across two distinct landscapes: the productive, western Klamath mountains (west) and the more arid southeastern Cascades (east) to predict the probability of high severity fire. More detailed information and methodology from the study can be found at Van Dusen et al. 2024 (doi: ). 
+
+This is the first version of the workflow to understand treatment effectiveness (V1)
+
 
 > **Note:** Scripts reference data stored in Box (`External Wildfire Treatment Outcomes/klamath/`). Raw and processed data are **not** tracked in this repository.
 
@@ -22,7 +25,7 @@ Select fires, compile treatment histories, map predictor variables, and extract 
 |--------|-------------|
 | `01_clean_treatments.R` | Download and clean FACTS/NFPORS treatment data; clip to fire perimeters; assign treatment categories |
 | `02_climateNA.R` | Extract 30-year climate normals using ClimateNA |
-| `03_dob_parks.R` | Compute degree-of-burning (DOB) surface using Parks et al. (2013) method *(we cannot redistribute this script -- Please, contact Sean Parks for latest version)* |
+| `03_dob_parks.R` | Compute day-of-burning (DOB) surface using Parks et al. (2013) method *(we cannot redistribute this script -- Please, contact Sean Parks for latest version)* |
 | `04_upload_dob_gee_assets.ipynb` | Upload DOB raster assets to Google Earth Engine |
 | `05_rasterize_geoprocess.R` | Rasterize treatment polygons; geoprocess upwind predictor layers |
 | `06_get_previous_fire_severity.ipynb` | Retrieve pre-fire burn severity from GEE |
