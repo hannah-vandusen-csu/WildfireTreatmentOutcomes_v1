@@ -1,11 +1,11 @@
 # Klamath–Trinity Analysis Scripts
 
-This repository introduces a standardized, scalable workflow to quantify wildfire-treatment outcomes across diverse landscapes. This workflow supports the study "Automated workflow demonstrates mixed treatment impacts on burn severity across ecoregion scales" (Van Dusen et al. 2026). These scripts evaluate federal fuel treatments across 50 wildfires in southern Oregon and Northern California (2012–2021). Specifically analyzed outcomes across two distinct landscapes: the productive, western Klamath mountains (west) and the more arid southeastern Cascades (east) to predict the probability of high severity fire. More detailed information and methodology from the study can be found at Van Dusen et al. 2024 (doi: ). 
+This repository introduces a standardized, scalable workflow to quantify wildfire-treatment outcomes across diverse landscapes. This workflow supports the study "Automated workflow demonstrates mixed treatment impacts on burn severity across ecoregion scales" (Van Dusen et al. 2026). These scripts evaluate federal fuel treatments across 50 wildfires in southern Oregon and Northern California (2012–2021). Specifically, the workflow aims to predict the probability of high severity fire in treated and untreated areas across two distinct landscapes and environmental conditions: the productive, western Klamath mountains (west) and the more arid southeastern Cascades (east). More detailed information and methodology from the study can be found at Van Dusen et al. 2024 (doi: ). 
 
-This is the first version of the workflow to understand treatment effectiveness (V1)
+Broadly, this study and associated repository proposes a semi-automated workflow to understand the wildfire-treatment interactions and outcomes. Although these scripts are applied to understand the association between fuel treatments and subsequent high severity wildfire, the authors developed them with the hope that the scripts can be applied to study any wildfire-treatment interaction with a measurable outcome: treatment's effect on infrastructure loss, containment success or another ecological outcome. This is the first version of the workflow to understand wildfire-treatment outcomes (WTO-V1). Please contact the authors if you are curious about further developments (h.vandusen@colostate.edu). 
 
 
-> **Note:** Scripts reference data stored in Box (`External Wildfire Treatment Outcomes/klamath/`). Raw and processed data are **not** tracked in this repository.
+> **Note:** Raw and processed data are **not** tracked in this Github repository. All data can be found in the dryad repository: ADDD!
 
 ---
 
