@@ -1,8 +1,8 @@
 # Automated Workflow for Wildfire-Treatment Outcomes: Version 1
 
-This repository introduces a standardized, scalable workflow to quantify wildfire-treatment outcomes across diverse landscapes. This workflow supports the study "Automated workflow demonstrates mixed treatment impacts on burn severity across ecoregion scales" (Van Dusen et al. 2026). These scripts evaluate federal fuel treatments across 50 wildfires in southern Oregon and Northern California (2012–2021). Specifically, the workflow aims to predict the probability of high severity fire in treated and untreated areas across two distinct landscapes and environmental conditions: the productive, western Klamath mountains (west) and the more arid southeastern Cascades (east). More detailed information and methodology from the study can be found at Van Dusen et al. 2024 (doi: ). 
+This repository introduces a standardized, scalable workflow to quantify wildfire-treatment outcomes across diverse landscapes. This workflow supports the study "Automated workflow demonstrates mix[...]
 
-Broadly, this study and associated repository proposes a semi-automated workflow to understand the wildfire-treatment interactions. Although these scripts are applied to understand the association between fuel treatments and subsequent high severity wildfire, the authors developed them with the hope that the scripts can be applied to study any wildfire-treatment interaction with a measurable outcome. For example, treatment's effect on infrastructure loss, containment success or another ecological wildfire outcome. This is the first published version of the wildfire-treatment outcomes workflow (WTO-V1). Please contact the cooresponding author (h.vandusen@colostate.edu) if you are curious about further developments and want to apply these script to other outcomes or fires. 
+Broadly, this study and associated repository proposes a semi-automated workflow to understand the wildfire-treatment interactions. Although these scripts are applied to understand the association [...]
 
 
 > **Note:** Raw and processed data are **not** tracked in this Github repository. All data can be found in the dryad repository: ADDD!
@@ -68,7 +68,7 @@ Configured in `user_input/` before running scripts:
 
 | File | Purpose |
 |------|---------|
-| `user_input_general.csv` | Script and data directory paths, coordinate reference system *The user must change this to point to data location on their local machine*|
+| `user_input_general.csv` | Script and data directory paths, coordinate reference system. **Users must update the `processed_data_directory` and `global_data_directory` paths to point to their local machine.** These paths should reflect where you downloaded the Dryad data repository — only the root download location needs to change; the subdirectory structure (`/klamath/data/klamath/` and `/klamath/data/global_data_pub/`) is already correct and should be kept as-is. |
 | `treatment_selection.csv` | Outcome-specific parameters for treatments: fire perimeter buffer, minimum treatment size, and treatment age window for burn severity, containment, and infrastructure outcomes |
 
 ---
@@ -91,7 +91,6 @@ function_scripts/
 ## Required Data (Box)
 
 All data is publically available. Data specifically used for this project is located in the data a data responsitory. 
-```
 
 ---
 
